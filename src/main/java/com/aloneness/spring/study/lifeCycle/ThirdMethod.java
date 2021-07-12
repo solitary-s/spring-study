@@ -1,4 +1,4 @@
-package com.aloneness.spring.study.bean.life.cycle;
+package com.aloneness.spring.study.lifeCycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;

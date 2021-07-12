@@ -1,6 +1,5 @@
-package com.aloneness.spring.study.bean.life.cycle;
+package com.aloneness.spring.study.lifeCycle;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -37,7 +36,7 @@ public class Main {
 
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(FirstMethod.class);
         System.out.println("容器创建完成");
-        applicationContext.getBean(ThirdMethod.class);
+//        applicationContext.getBean(ThirdMethod.class);
         applicationContext.close();
 
     }

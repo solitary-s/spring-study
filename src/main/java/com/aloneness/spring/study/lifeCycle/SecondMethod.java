@@ -1,4 +1,4 @@
-package com.aloneness.spring.study.bean.life.cycle;
+package com.aloneness.spring.study.lifeCycle;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -16,6 +16,7 @@ public class SecondMethod implements InitializingBean, DisposableBean {
      *
      * @throws Exception
      */
+    @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("init ...");
     }
@@ -25,6 +26,7 @@ public class SecondMethod implements InitializingBean, DisposableBean {
      *
      * @throws Exception
      */
+    @Override
     public void destroy() throws Exception {
         System.out.println("destroy ...");
     }
